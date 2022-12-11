@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 function Header() {
     return (
@@ -10,7 +11,9 @@ function Header() {
                 </div>
                 {/* Company logo */}
                 <div className='sm:w-auto w-[100px]'>
-                    <img src='./logo.png' alt='logo-images' />
+                    <Link to='/'>
+                        <img src='./logo.png' alt='logo-images' />
+                    </Link>
                 </div>
             </div>
         </>
