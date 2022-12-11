@@ -11,7 +11,7 @@ function Header() {
                 </div>
                 {/* Company logo */}
                 <div className='sm:w-auto w-[100px]'>
-                    <Link to='/'>
+                    <Link to='/' className='cursor-pointer'>
                         <img src='./logo.png' alt='logo-images' />
                     </Link>
                 </div>
