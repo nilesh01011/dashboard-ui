@@ -25,6 +25,11 @@ export const options = {
             display: false,
         },
     },
+    elements: {
+        point: {
+            radius: 0
+        }
+    },
     // plugins: {
     //     title: {
     //         display: true,
@@ -78,18 +83,39 @@ export const data = {
     datasets: [
         {
             // label: 'Scope 1',
+            barThickness: 45,
+            maxBarThickness: 45,
             data: ['41777', '45768', '40654', '38144'],
             backgroundColor: '#2F575D',
+        },
+        {
+            type: 'line',
+            fill: false,
+            data: ['41777', '45768', '40654', '38144'],
         },
         {
             // label: 'Scope 2',
             data: ['226950', '226950', '199768', '175862'],
             backgroundColor: '#529863',
+            barThickness: 45,
+            maxBarThickness: 45,
+        },
+        {
+            type: 'line',
+            fill: false,
+            data: ['226950', '226950', '199768', '175862'],
         },
         {
             // label: 'Scope 3',
             data: ['329712', '218795', '584255', '636843'],
             backgroundColor: '#70AD47',
+            barThickness: 45,
+            maxBarThickness: 45,
+        },
+        {
+            type: 'line',
+            fill: false,
+            data: ['329712', '218795', '584255', '636843'],
         },
     ],
 };
@@ -97,8 +123,8 @@ export const data = {
 function StackedBar() {
     return (
         <>
-            <div className='w-full bg-white rounded-lg shadow-md h-full border border-b-0 border-l-0 border-r-0 border-t-1 border-gray-300'>
-                <div className='flex md:flex-row flex-col md:items-center justify-between bg-[#F4F4F4] px-4 py-3 mb-2'>
+            <div className='h-full w-full bg-white rounded-lg shadow-md border border-b-0 border-l-0 border-r-0 border-t-1 border-gray-300'>
+                <div className='h-full flex md:flex-row flex-col md:items-center justify-between bg-[#F4F4F4] px-4 py-3 mb-2'>
                     <h1 className='sm:text-lg text-sm font-bold w-full text-[#0B0B0C] max-w-max'>Carbon Emission Trend FY21</h1>
                     <div className='flex items-center gap-3'>
                         {/* Scope 1 */}

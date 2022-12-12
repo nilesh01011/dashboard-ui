@@ -21,6 +21,7 @@ ChartJS.register(
 
 export const options = {
     // responsive: true,
+
     layout: {
         padding: {
             left: 20,
@@ -66,7 +67,7 @@ export const data = {
         {
             data: [264, 220, 200, 195],
             borderColor: '#000',
-            borderWidth: 1
+            borderWidth: 2,
         }
     ],
 };
@@ -79,7 +80,7 @@ function LineChart() {
                 <div className='flex md:flex-row flex-col md:items-center justify-between bg-[#F4F4F4] px-4 py-3 mb-2'>
                     <h1 className='sm:text-lg text-sm font-bold w-full text-[#0B0B0C]'>Emission per Vehicle Manufactured</h1>
                     <div className='flex items-center gap-2'>
-                        <span className='w-[26px] h-[1px] bg-black'></span>
+                        <span className='w-[26px] h-[3px] bg-black'></span>
                         <p className='sm:text-lg text-sm'>Emission</p>
                     </div>
                 </div>

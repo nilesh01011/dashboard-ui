@@ -13,7 +13,7 @@ function MainContent() {
                         <img className='h-[28px]' src='./images/Union.png' alt='Union-images' />
                         <h1 className='font-bold sm:text-2xl text-lg'>Trends YoY</h1>
                     </div>
-                    <div className='flex lg:flex-row flex-col justify-between gap-5 lg:h-[350px]'>
+                    <div className='flex lg:flex-row flex-col justify-between gap-5'>
                         <StackedBar />
                         <LineChart />
                     </div>
