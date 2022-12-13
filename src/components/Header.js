@@ -10,7 +10,7 @@ function Header() {
                 </div>
                 {/* Company logo */}
                 <div className='sm:w-auto w-[100px]'>
-                    <img src='./logo.png' alt='logo-images' />
+                    <img src='./logo.svg' alt='logo-images' />
                 </div>
             </div>
         </>

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import {
     Chart as ChartJS,
     CategoryScale,
@@ -9,6 +9,7 @@ import {
     Legend,
 } from 'chart.js';
 import { Bar } from 'react-chartjs-2';
+import GraphSkeletonLoading from './GraphSkeletonLoading';
 
 ChartJS.register(
     CategoryScale,
@@ -71,7 +72,15 @@ export const options = {
             grid: {
                 drawBorder: false,
                 lineWidth: 0 // <-- this removes vertical lines between bars
-            }
+            },
+            beginAtZero: true,
+            title: {
+                display: true,
+                text: 'Years',
+                font: {
+                    size: 14
+                }
+            },
         }
     }
 };
@@ -121,31 +130,46 @@ export const data = {
 };
 
 function StackedBar() {
+    const [isLoading, setIsLoading] = useState(true);
+
+    useEffect(() => {
+        setTimeout(() => {
+            setIsLoading(false)
+        }, 4000)
+    }, [])
+
     return (
         <>
-            <div className='h-full w-full bg-white rounded-lg shadow-md border border-b-0 border-l-0 border-r-0 border-t-1 border-gray-300'>
-                <div className='h-full flex md:flex-row flex-col md:items-center justify-between bg-[#F4F4F4] px-4 py-3 mb-2'>
-                    <h1 className='sm:text-lg text-sm font-bold w-full text-[#0B0B0C] max-w-max'>Carbon Emission Trend FY21</h1>
-                    <div className='flex items-center gap-3'>
-                        {/* Scope 1 */}
-                        <div className='flex items-center gap-2'>
-                            <span className='w-[5px] p-[5px] bg-[#2F575D]'></span>
-                            <span className='text-sm'>Scope 1</span>
+            {
+                isLoading ? (
+                    <GraphSkeletonLoading />
+                ) : (
+                    <div className='h-full w-full bg-white rounded-lg shadow-[0_0_3px_rgba(0,0,0,0.2)]'>
+                        <div className='h-full flex md:flex-row flex-col md:items-center justify-between bg-[#F4F4F4] px-4 py-3 mb-2 rounded-[0.5rem_0.5rem_0_0]'>
+                            <h1 className='sm:text-lg text-sm font-bold w-full text-[#0B0B0C] max-w-max'>Carbon Emission Trend FY21</h1>
+                            <div className='flex items-center gap-3'>
+                                {/* Scope 1 */}
+                                <div className='flex items-center gap-2'>
+                                    <span className='w-[5px] p-[5px] bg-[#2F575D]'></span>
+                                    <span className='text-sm'>Scope 1</span>
+                                </div>
+                                {/* Scope 2 */}
+                                <div className='flex items-center gap-2'>
+                                    <span className='w-[5px] p-[5px] bg-[#529863]'></span>
+                                    <span className='text-sm'>Scope 2</span>
+                                </div>
+                                {/* Scope 3 */}
+                                <div className='flex items-center gap-2'>
+                                    <span className='w-[5px] p-[5px] bg-[#70AD47]'></span>
+                                    <span className='text-sm'>Scope 3</span>
+                                </div>
+                            </div>
                         </div>
-                        {/* Scope 2 */}
-                        <div className='flex items-center gap-2'>
-                            <span className='w-[5px] p-[5px] bg-[#529863]'></span>
-                            <span className='text-sm'>Scope 2</span>
-                        </div>
-                        {/* Scope 3 */}
-                        <div className='flex items-center gap-2'>
-                            <span className='w-[5px] p-[5px] bg-[#70AD47]'></span>
-                            <span className='text-sm'>Scope 3</span>
-                        </div>
+                        <Bar options={options} data={data} />
                     </div>
-                </div>
-                <Bar options={options} data={data} />
-            </div>
+                )
+            }
+
         </>
     )
 }

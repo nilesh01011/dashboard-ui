@@ -6,12 +6,12 @@ import TableList from './TableList';
 function EnvironImpact() {
     return (
         <>
-            <div className='mb-10 xl:w-full w-auto'>
+            <div className='mb-5 xl:w-full w-auto'>
                 {/* heading */}
                 <div className='flex justify-between w-full gap-4 lg:flex-row flex-col'>
                     {/* title text */}
                     <div className='flex items-center gap-2 whitespace-nowrap'>
-                        <img className='h-[28px]' src='./images/Global.png' alt='Global-images' />
+                        <img className='h-[28px]' src='./images/Global.svg' alt='Global-images' />
                         <h1 className='font-bold sm:text-2xl text-lg'>Environmental Impact</h1>
                     </div>
                     <div className='flex items-center gap-4 max-h-max flex-wrap'>
