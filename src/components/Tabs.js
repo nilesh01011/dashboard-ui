@@ -5,6 +5,11 @@ import Overview from './Overview'
 function Tabs() {
     let type;
     const [isCompany, setIsCompany] = useState(type === "companies");
+    const [switchTheme, setSwitchTheme] = useState(false);
+
+    // const switchThemeHandler = () => {
+    //     setSwitchTheme(true);
+    // }
 
     useEffect(() => {
         setIsCompany(type === "companies");
@@ -26,42 +31,32 @@ function Tabs() {
     return (
         <>
             <div className='w-full h-auto xl:px-14 md:px-10 px-4'>
-                <div>
+                <div className='flex flex-col mt-4'>
+                    <div className='w-full flex items-end justify-end'>
+                        <button className={`w-[36px] h-[36px] p-2 rounded-full ${!switchTheme ? 'bg-white' : 'bg-[#242424]'} shadow-[0_0_8px_0_rgba(0,0,0,0.35)]`} onClick={() => setSwitchTheme(!switchTheme)}>
+                            {
+                                switchTheme ?
+                                    <img src='./images/darkmoon.svg' alt='moon' /> : <img src='./images/lightmoon.svg' alt='moon' />
+                            }
+                        </button>
+                    </div>
                     <div className="border-b border-gray-200 mb-4">
                         <nav
-                            className=" flex flex-row mt-2"
+                            className=" w-[46%] mr-auto flex flex-row border-b-2 relative"
                             aria-label="Tabs"
                         >
-                            {tabs.map((tab) => (
+                            {tabs.map((tab, idx) => (
                                 <button
-                                    data-test-id={`tab-${tab.name}`}
                                     key={tab.name}
                                     onClick={() => {
                                         handleNav(tab.name);
                                     }}
-                                    className={`${tab.current ? "border-primary-500 text-primary-600 w-1/2 text-center flex align-center justify-center bg-black text-white p-3" : "p-3 border-transparent text-gray-500 w-1/2 text-center hover:text-gray-700 hover:border-gray-300"
+                                    className={`${tab.current
+                                        ? "border-primary-500 text-primary-600 w-1/2 text-center flex items-center justify-center border-b-2 border-[#FF3E5B]"
+                                        : "border-transparent text-gray-500 w-1/2 text-center hover:text-gray-700 border-gray-300 whitespace-nowrap py-2 px-1"
                                         }
                                             `}
-                                // aria-current={
-                                //     tab.current ? "page" : undefined
-                                // }
                                 >
-                                    {tab.current ? (
-                                        <svg
-                                            xmlns="http://www.w3.org/2000/svg"
-                                            viewBox="0 0 20 20"
-                                            fill="currentColor"
-                                            className="w-5 h-5 mr-2"
-                                        >
-                                            <path
-                                                fillRule="evenodd"
-                                                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
-                                                clipRule="evenodd"
-                                            />
-                                        </svg>
-                                    ) : (
-                                        ""
-                                    )}
 
                                     {tab.name}
                                 </button>
