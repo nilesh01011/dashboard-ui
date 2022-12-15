@@ -69,6 +69,30 @@ export const regionsData = [
     }
 ];
 
+export const fullYearsOverview = [
+    {
+        id: 1,
+        name: '2021 Full Year'
+    },
+    {
+        id: 2,
+        name: 'Items 9'
+    },
+    {
+        id: 3,
+        name: 'Items 10'
+    },
+    {
+        id: 4,
+        name: 'Items 11'
+    },
+    {
+        id: 5,
+        name: 'Items 12'
+    }
+]
+
+
 // Tables Data of Environmental Impact
 
 export const tableData = [
