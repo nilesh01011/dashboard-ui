@@ -12,12 +12,12 @@ function TableList() {
 
     const LoadMoreData = () => {
         setLimitsData(showItemsMore => tableData.length + showItemsMore);
-        document.getElementById('overflowScroll').classList.add('overflow-y-scroll');
+        // document.getElementById('overflowScroll').classList.add('overflow-y-scroll');
     }
 
     const LessMoreData = () => {
         setLimitsData(5);
-        document.getElementById('overflowScroll').classList.remove('overflow-y-scroll');
+        // document.getElementById('overflowScroll').classList.remove('overflow-y-scroll');
     }
 
     const tableHead = [
@@ -42,7 +42,7 @@ function TableList() {
     useEffect(() => {
         setTimeout(() => {
             setIsLoading(false)
-        }, 4000)
+        }, 1200)
     }, [])
 
     return (
@@ -53,7 +53,7 @@ function TableList() {
                 ) : (
                     <div>
                         <div className="w-full lg:overflow-x-hidden overflow-x-scroll no-scrollbar shadow-[0_0_3px_rgba(0,0,0,0.2)] rounded-lg">
-                            <div id='overflowScroll' className='w-full h-[305px]'>
+                            <div id='overflowScroll' className='w-full h-full'>
                                 <table className="w-full divide-y divide-gray-200">
                                     <thead className="w-full">
                                         <tr>
@@ -69,7 +69,7 @@ function TableList() {
                                             }
                                         </tr>
                                     </thead>
-                                    <tbody className="divide-y divide-gray-200 bg-white w-full overflow-y-scroll">
+                                    <tbody className="divide-y divide-gray-200 bg-white w-full">
                                         {
                                             items.slice(0, limitsData).map((elem) => {
                                                 return (
