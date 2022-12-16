@@ -2,10 +2,10 @@ import React from 'react'
 import Skeleton from 'react-loading-skeleton'
 import 'react-loading-skeleton/dist/skeleton.css'
 
-function GraphSkeletonLoading() {
+function GraphSkeletonLoading({theme}) {
     return (
         <>
-            <div className='w-full h-[342px] shadow-[0_0_3px_rgba(0,0,0,0.2)] rounded-lg bg-white p-4 flex flex-col gap-2'>
+            <div className={`w-full h-[342px] shadow-[0_0_3px_rgba(0,0,0,0.2)] rounded-lg ${theme === "light" ? 'bg-white' : 'bg-[#242424]'} p-4 flex flex-col gap-2`}>
                 <div className='h-[13%] flex items-center justify-between gap-2'>
                     <p className='w-full'>
                         <Skeleton height={40} />
