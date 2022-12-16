@@ -2,17 +2,17 @@ import React from 'react'
 import EnvironImpact from './EnvironImpact'
 import Trends from './Trends'
 
-function MainContent() {
+function MainContent({theme}) {
     return (
         <>
             <div className='mt-8'>
                 {/* Trends and charts.JS */}
                 <div>
-                    <Trends />
+                    <Trends theme={theme} />
                 </div>
                 {/* EnvironImpact and Tables */}
                 <div className='mt-10'>
-                    <EnvironImpact />
+                    <EnvironImpact theme={theme} />
                 </div>
             </div>
         </>
