@@ -81,27 +81,27 @@ export const data = {
     ],
 };
 
-function LineChart() {
+function LineChart({theme}) {
     const [isLoading, setIsLoading] = useState(true);
 
     useEffect(() => {
         setTimeout(() => {
             setIsLoading(false)
-        }, 4000)
+        }, 1500)
     }, [])
 
     return (
         <>
             {
                 isLoading ? (
-                    <GraphSkeletonLoading />
+                    <GraphSkeletonLoading theme={theme} />
                 ) : (
-                    <div className='h-full w-full bg-white rounded-lg shadow-[0_0_3px_rgba(0,0,0,0.2)]'>
-                        <div className='flex md:flex-row flex-col md:items-center justify-between bg-[#F4F4F4] px-4 py-3 mb-2 rounded-[0.5rem_0.5rem_0_0]'>
-                            <h1 className='sm:text-lg text-sm font-bold w-full text-[#0B0B0C]'>Emission per Vehicle Manufactured</h1>
+                    <div className={`h-full w-full rounded-lg shadow-[0_0_3px_rgba(0,0,0,0.2)] ${theme === 'dark' ? 'bg-[#242424]' : 'bg-white'}`}>
+                        <div className={`flex md:flex-row flex-col md:items-center justify-between ${theme === 'dark' ? 'bg-[#635D5D]' : 'bg-[#F4F4F4]'} px-4 py-3 mb-2 rounded-[0.5rem_0.5rem_0_0]`}>
+                            <h1 className={`sm:text-lg text-sm font-bold w-full ${theme === 'dark' ? 'text-white' : 'text-[#0B0B0C]'} `}>Emission per Vehicle Manufactured</h1>
                             <div className='flex items-center gap-2'>
-                                <span className='w-[26px] h-[3px] bg-black'></span>
-                                <p className='sm:text-lg text-sm'>Emission</p>
+                                <span className={`w-[26px] h-[3px] ${theme === 'dark' ? 'bg-white' : 'bg-black'}`}></span>
+                                <p className={`sm:text-lg text-sm ${theme === 'dark' ? 'text-white' : 'text-black'}`}>Emission</p>
                             </div>
                         </div>
                         <Line data={data} options={options}></Line>
