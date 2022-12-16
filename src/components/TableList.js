@@ -3,7 +3,7 @@ import { tableData } from '../Data'
 import 'react-loading-skeleton/dist/skeleton.css'
 import TableSkeletonLoading from './TableSkeletonLoading';
 
-function TableList() {
+function TableList({theme}) {
 
     // eslint-disable-next-line no-unused-vars
     const [items, setItems] = useState(tableData);
@@ -12,12 +12,10 @@ function TableList() {
 
     const LoadMoreData = () => {
         setLimitsData(showItemsMore => tableData.length + showItemsMore);
-        // document.getElementById('overflowScroll').classList.add('overflow-y-scroll');
     }
 
     const LessMoreData = () => {
         setLimitsData(5);
-        // document.getElementById('overflowScroll').classList.remove('overflow-y-scroll');
     }
 
     const tableHead = [
@@ -55,31 +53,31 @@ function TableList() {
                         <div className="w-full lg:overflow-x-hidden overflow-x-scroll no-scrollbar shadow-[0_0_3px_rgba(0,0,0,0.2)] rounded-lg">
                             <div id='overflowScroll' className='w-full h-full'>
                                 <table className="w-full divide-y divide-gray-200">
-                                    <thead className="w-full">
+                                    <thead className={`w-full ${theme === 'dark' ? 'bg-[#635D5D]' : 'bg-[#F4F4F4]'}`}>
                                         <tr>
                                             {
                                                 tableHead.map((ele) => (
                                                     <th
                                                         key={ele.id}
                                                         scope="col"
-                                                        className={`${ele.id === 1 ? 'text-left' : 'text-end'}  px-6 py-3 text-xs font-bold text-gray-500 capitalize`}>
+                                                        className={`${ele.id === 1 ? 'text-left' : 'text-end'}  px-6 py-3 text-xs font-bold capitalize ${theme === 'dark' ? 'text-white' : 'text-gray-500'}`}>
                                                         {ele.title}
                                                     </th>
                                                 ))
                                             }
                                         </tr>
                                     </thead>
-                                    <tbody className="divide-y divide-gray-200 bg-white w-full">
+                                    <tbody className={`divide-y divide-gray-200 w-full ${theme === 'dark' ? 'bg-[#242424]' : 'bg-white'}`}>
                                         {
                                             items.slice(0, limitsData).map((elem) => {
                                                 return (
                                                     <tr key={elem.id} >
-                                                        <td className="pl-6 pr-4 py-4 text-sm font-medium text-gray-800 whitespace-nowrap capitalize">
+                                                        <td className={`pl-6 pr-4 py-4 text-sm font-medium whitespace-nowrap capitalize ${theme === 'dark' ? 'text-white' : 'text-gray-800'}`}>
                                                             {elem.title}
                                                         </td>
                                                         {
                                                             elem.countersData.map((data) => (
-                                                                <td key={data.id} className="pl-6 pr-4 py-4 text-sm text-gray-800">
+                                                                <td key={data.id} className={`pl-6 pr-4 py-4 text-sm ${theme === 'dark' ? 'text-white' : 'text-gray-800'}`}>
                                                                     <div className='flex items-center gap-2 justify-end xl:text-sm text-[12px]'>
                                                                         {data.countsNumber}
                                                                         <img className='h-[9px]' src={data.image} alt='growths' />
