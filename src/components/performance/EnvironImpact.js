@@ -1,6 +1,6 @@
 import React from "react";
-import { divisionsData, plantsData, regionsData } from "../Data";
-import SelectBox from "./SelectBox";
+import { divisionsData, plantsData, regionsData } from "../../Data";
+import SelectBox from "../SelectBox";
 import TableList from "./TableList";
 
 function EnvironImpact({ theme }) {

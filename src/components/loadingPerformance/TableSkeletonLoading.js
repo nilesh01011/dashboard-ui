@@ -1,8 +1,8 @@
 import React from 'react'
-import Skeleton from 'react-loading-skeleton'
+import Skeleton, { SkeletonTheme } from 'react-loading-skeleton'
 import 'react-loading-skeleton/dist/skeleton.css'
 
-function TableSkeletonLoading({ tableList }) {
+function TableSkeletonLoading({ tableList, theme }) {
 
     let tableRow = [];
 
@@ -29,11 +29,13 @@ function TableSkeletonLoading({ tableList }) {
 
     return (
         <>
-            <div className='w-full h-[350px] shadow-[0_0_3px_rgba(0,0,0,0.2)] rounded-lg bg-white px-6 py-4'>
-                <div className='mb-2'>
-                    <Skeleton height={40} />
-                </div>
-                {tableRow}
+            <div className={`w-full h-[350px] shadow-[0_0_3px_rgba(0,0,0,0.2)] rounded-lg ${theme === 'dark' ? 'bg-[#242424]' : 'bg-white '} px-6 py-4`}>
+                <SkeletonTheme baseColor={`${theme === 'dark' ? '#444' : '#f5f5f5'}`} highlightColor={`${theme === 'dark' ? '#50535a' : '#ebebeb'}`}>
+                    <div className='mb-2'>
+                        <Skeleton height={40} />
+                    </div>
+                    {tableRow}
+                </SkeletonTheme>
             </div>
         </>
     )

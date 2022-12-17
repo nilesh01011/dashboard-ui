@@ -92,8 +92,54 @@ export const fullYearsOverview = [
     }
 ]
 
+// Overview Total Carbon in Energy
 
-// Tables Data of Environmental Impact
+export const doughnutData = [
+    {
+        id: 1,
+        name: 'Electricity from grid',
+        data: 54,
+        bgColor: '#38565C'
+    },
+    {
+        id: 2,
+        name: 'LPG',
+        data: 5,
+        bgColor: '#213337'
+    },
+    {
+        id: 3,
+        name: 'Diesel/HSD',
+        data: 10,
+        bgColor: '#7EAC55'
+    },
+    {
+        id: 4,
+        name: 'Natural Gas & CNG',
+        data: 18,
+        bgColor: '#4B6733'
+    },
+    {
+        id: 5,
+        name: 'Petrol',
+        data: 1,
+        bgColor: '#6D8970'
+    },
+    {
+        id: 6,
+        name: 'Propone',
+        data: 7,
+        bgColor: '#57838D'
+    },
+    {
+        id: 7,
+        name: 'Renewable energy source',
+        data: 5,
+        bgColor: '#415243'
+    },
+]
+
+// Performance Tables Data of Environmental Impact
 
 export const tableData = [
     {
@@ -525,5 +571,28 @@ export const tableData = [
                 image: './images/Polygon1.svg',
             },
         ]
+    },
+]
+
+export const lineChartData = [
+    {
+        id: 1,
+        date: '01-01-2018',
+        number: 264,
+    },
+    {
+        id: 2,
+        date: '01-01-2019',
+        number: 220,
+    },
+    {
+        id: 3,
+        date: '01-01-2020',
+        number: 200,
+    },
+    {
+        id: 4,
+        date: '01-01-2021',
+        number: 195,
     },
 ]

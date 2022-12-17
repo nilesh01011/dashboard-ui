@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react'
-import { tableData } from '../Data'
+import { tableData } from '../../Data'
 import 'react-loading-skeleton/dist/skeleton.css'
-import TableSkeletonLoading from './TableSkeletonLoading';
+import TableSkeletonLoading from '../loadingPerformance/TableSkeletonLoading';
 
-function TableList({theme}) {
+function TableList({ theme }) {
 
     // eslint-disable-next-line no-unused-vars
     const [items, setItems] = useState(tableData);
@@ -40,19 +40,19 @@ function TableList({theme}) {
     useEffect(() => {
         setTimeout(() => {
             setIsLoading(false)
-        }, 1200)
+        }, 1500)
     }, [])
 
     return (
         <>
             {
                 isLoading ? (
-                    <TableSkeletonLoading tableList={6} />
+                    <TableSkeletonLoading tableList={6} theme={theme} />
                 ) : (
                     <div>
                         <div className="w-full lg:overflow-x-hidden overflow-x-scroll no-scrollbar shadow-[0_0_3px_rgba(0,0,0,0.2)] rounded-lg">
                             <div id='overflowScroll' className='w-full h-full'>
-                                <table className="w-full divide-y divide-gray-200">
+                                <table className={`w-full divide-y ${theme === 'dark' ? 'divide-[#635D5D]' : 'divide-gray-200'}`}>
                                     <thead className={`w-full ${theme === 'dark' ? 'bg-[#635D5D]' : 'bg-[#F4F4F4]'}`}>
                                         <tr>
                                             {
@@ -67,7 +67,7 @@ function TableList({theme}) {
                                             }
                                         </tr>
                                     </thead>
-                                    <tbody className={`divide-y divide-gray-200 w-full ${theme === 'dark' ? 'bg-[#242424]' : 'bg-white'}`}>
+                                    <tbody className={`divide-y ${theme === 'dark' ? 'divide-[#635D5D]' : 'divide-gray-200'} w-full ${theme === 'dark' ? 'bg-[#242424]' : 'bg-white'}`}>
                                         {
                                             items.slice(0, limitsData).map((elem) => {
                                                 return (

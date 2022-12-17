@@ -9,7 +9,7 @@ import {
     Legend,
 } from 'chart.js';
 import { Bar } from 'react-chartjs-2';
-import GraphSkeletonLoading from './GraphSkeletonLoading';
+import GraphSkeletonLoading from '../loadingPerformance/GraphSkeletonLoading';
 
 ChartJS.register(
     CategoryScale,
@@ -20,7 +20,7 @@ ChartJS.register(
     Legend
 );
 
-function StackedBar({theme}) {
+function StackedBar({ theme }) {
     const colors = theme === 'dark' ? '#fff' : '#000';
 
     const options = {
@@ -48,7 +48,6 @@ function StackedBar({theme}) {
                 grid: {
                     drawBorder: false, // <-- this removes y-axis line
                     lineWidth: 0,
-                    color: colors
                 },
                 beginAtZero: true,
                 title: {
@@ -59,7 +58,7 @@ function StackedBar({theme}) {
                         size: 14
                     }
                 },
-                ticks : {
+                ticks: {
                     color: colors
                 },
             },
@@ -68,59 +67,56 @@ function StackedBar({theme}) {
                 grid: {
                     drawBorder: false,
                     lineWidth: 0, // <-- this removes vertical lines between bars
-                    color: colors
                 },
+                color: 'red',
                 beginAtZero: true,
                 title: {
                     display: true,
                     text: 'Years',
-                    color:colors,
+                    color: colors,
                     font: {
                         size: 14
                     }
                 },
-                ticks : {
+                ticks: {
                     color: colors
                 }
             }
         },
     };
-    
+
     const labels = ['2017-18', '2018-19', '2019-20', '2020-21'];
-    
+
     const data = {
         labels,
-        color:colors,
         datasets: [
             {
-                // label: 'Scope 1',
                 barThickness: 45,
                 maxBarThickness: 45,
                 data: ['41777', '45768', '40654', '38144'],
                 backgroundColor: '#2F575D',
-                color: colors
             },
             {
                 type: 'line',
                 fill: false,
                 data: ['41777', '45768', '40654', '38144'],
-                color: colors
+                borderColor: theme === 'dark' ? '#fff' : '#DEDEDE',
+                borderWidth: 1,
             },
             {
-                // label: 'Scope 2',
                 data: ['226950', '226950', '199768', '175862'],
                 backgroundColor: '#529863',
                 barThickness: 45,
                 maxBarThickness: 45,
-                color: colors
             },
             {
                 type: 'line',
                 fill: false,
                 data: ['226950', '226950', '199768', '175862'],
+                borderColor: theme === 'dark' ? '#fff' : '#DEDEDE',
+                borderWidth: 1,
             },
             {
-                // label: 'Scope 3',
                 data: ['329712', '218795', '584255', '636843'],
                 backgroundColor: '#70AD47',
                 barThickness: 45,
@@ -130,8 +126,9 @@ function StackedBar({theme}) {
             {
                 type: 'line',
                 fill: false,
-                // color: colors,
                 data: ['329712', '218795', '584255', '636843'],
+                borderColor: theme === 'dark' ? '#fff' : '#DEDEDE',
+                borderWidth: 1,
             },
         ],
 

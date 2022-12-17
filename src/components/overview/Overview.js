@@ -4,17 +4,20 @@ import {
   fullYearsOverview,
   plantsData,
   regionsData,
-} from "../Data";
-import OverviewBoxs from "./OverviewBoxs";
-import SelectBox from "./SelectBox";
+} from "../../Data";
+import OverviewBottomSide from "./OverviewBottomSide";
+import OverviewBoxs1 from "./OverviewBoxs1";
+import OverviewBoxs2 from "./OverviewBoxs2";
+import OverviewBoxs3 from "./OverviewBoxs3";
+import SelectBox from "../SelectBox";
 
-function Overview({theme}) {
+function Overview({ theme }) {
 
   return (
     <div className="mt-8">
       <div className="flex flex-col">
         {/* title and selectboxs */}
-        <div className="flex items-center justify-between mb-6">
+        <div className="flex xl:items-center items-start xl:gap-0 gap-4 justify-between mb-7 xl:flex-row flex-col">
           {/* titles */}
           <div className="flex items-center gap-2">
             <svg
@@ -53,7 +56,7 @@ function Overview({theme}) {
           </div>
 
           {/* selectBox */}
-          <div className="flex gap-[20px]">
+          <div className="flex gap-[20px] flex-wrap">
             <SelectBox theme={theme} items={fullYearsOverview} />
             <SelectBox theme={theme} items={divisionsData} />
             <SelectBox theme={theme} items={plantsData} />
@@ -61,13 +64,16 @@ function Overview({theme}) {
           </div>
         </div>
         {/* overview Boxs */}
-        <div className="flex gap-[20px] mb-6">
-          <OverviewBoxs
-            title="Total Carbon Footprint"
-            paras="(Scope 1 & Scope 2)"
+        <div className="flex gap-[20px] xl:flex-nowrap flex-wrap">
+          <OverviewBoxs1
+            theme={theme}
           />
-          <OverviewBoxs title="Intensity Metrics" paras="(Scope 1 & Scope 2)" />
-          <OverviewBoxs title="Total Carbon in Energy" />
+          <OverviewBoxs2 theme={theme} />
+          <OverviewBoxs3 theme={theme} />
+        </div>
+        {/* bottom sides */}
+        <div className="mt-[20px] mb-6">
+          <OverviewBottomSide theme={theme} />
         </div>
       </div>
     </div>
