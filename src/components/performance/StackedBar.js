@@ -10,6 +10,7 @@ import {
 } from 'chart.js';
 import { Bar } from 'react-chartjs-2';
 import GraphSkeletonLoading from '../loadingPerformance/GraphSkeletonLoading';
+import { stackedChartData } from '../../Data';
 
 ChartJS.register(
     CategoryScale,
@@ -86,6 +87,8 @@ function StackedBar({ theme }) {
     };
 
     const labels = ['2017-18', '2018-19', '2019-20', '2020-21'];
+
+    // console.log(stackedChartData.map((ele) => ele.dataList.map((el) => { return el })))
 
     const data = {
         labels,

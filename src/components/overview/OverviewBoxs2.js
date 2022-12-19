@@ -54,7 +54,7 @@ function OverviewBoxs2({ theme }) {
                                         <span className={`${theme === 'dark' ? 'text-white' : 'text-black'} text-sm font-semibold ml-3`}>FY21</span>
                                     </div>
                                 </div>
-                                <div className='flex justify-between items-center p-[16px]'>
+                                <div className='flex justify-between items-center p-[16px] pb-[1.2rem]'>
                                     <div className='flex w-full justify-between'>
                                         <div className='w-5/12'>
                                             <h1 className={`text-2xl font-semibold ${theme === 'dark' ? 'text-white' : 'text-[#635D5D]'}`}>1200</h1>
@@ -101,7 +101,7 @@ function OverviewBoxs2({ theme }) {
                                         <span className={`${theme === 'dark' ? 'text-white' : 'text-black'} text-sm font-semibold ml-3`}>FY21</span>
                                     </div>
                                 </div>
-                                <div className='flex justify-between items-center p-[16px]'>
+                                <div className='flex justify-between items-center p-[16px] pb-[1.2rem]'>
                                     <div className='flex w-full justify-between'>
                                         <div className='w-5/12'>
                                             <h1 className={`text-2xl font-semibold ${theme === 'dark' ? 'text-white' : 'text-[#635D5D]'}`}>120</h1>
@@ -150,7 +150,7 @@ function OverviewBoxs2({ theme }) {
                                         <span className={`${theme === 'dark' ? 'text-white' : 'text-black'} text-sm font-semibold ml-3`}>FY21</span>
                                     </div>
                                 </div>
-                                <div className='flex justify-between items-center p-[16px]'>
+                                <div className='flex justify-between items-center p-[16px] pb-[1.2rem]'>
                                     <div className='flex w-full justify-between'>
                                         <div className='w-5/12'>
                                             <h1 className={`text-2xl font-semibold ${theme === 'dark' ? 'text-white' : 'text-[#635D5D]'}`}>0.86</h1>

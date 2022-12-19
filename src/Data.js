@@ -596,3 +596,22 @@ export const lineChartData = [
         number: 195,
     },
 ]
+
+
+export const stackedChartData = [
+    {
+        id: 1,
+        bgColor: '#2F575D',
+        dataList: ['41777', '45768', '40654', '38144'],
+    },
+    {
+        id: 2,
+        bgColor: '#529863',
+        dataList: ['226950', '226950', '199768', '175862'],
+    },
+    {
+        id: 3,
+        bgColor: '#70AD47',
+        dataList: ['329712', '218795', '584255', '636843'],
+    },
+]
