@@ -115,6 +115,7 @@ function OverviewBottomSide({ theme }) {
                                                 data={data}
                                                 options={options}
                                                 plugins={[textCenter]}
+                                                className='z-10'
                                             />
                                         </div>
                                     </div>
