@@ -41,7 +41,7 @@ function Tabs() {
         <>
             <div className='w-full h-auto xl:px-14 md:px-10 px-4'>
                 <div className='flex flex-col'>
-                    <div className={`mb-4 mt-2 flex lg:flex-row flex-col border-b-[1px] ${theme === 'dark' ? 'border-[#635D5D]' : 'border-[#DEDEDE]'}`}>
+                    <div className={`mb-4 mt-2 flex lg:flex-row flex-col sm:border-b-[1px] ${theme === 'dark' ? 'border-[#635D5D]' : 'border-[#DEDEDE]'}`}>
                         {/* nav tabs */}
                         <nav
                             className="lg:w-[85%] md:w-[70%] w-full mr-auto flex flex-row relative lg:order-1 order-2"
