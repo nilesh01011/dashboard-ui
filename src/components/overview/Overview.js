@@ -19,9 +19,9 @@ function Overview({ theme }) {
         {/* title and selectboxs */}
         <div className="flex xl:items-center items-start xl:gap-0 gap-4 justify-between mb-7 xl:flex-row flex-col">
           {/* titles */}
-          <div className="flex items-start gap-1 leading-4">
+          <div className="flex items-start gap-[3px] leading-4">
             <svg className="h-[18px]"
-              width="26"
+              width="24"
               height="18"
               viewBox="0 0 26 30"
               fill="none"
