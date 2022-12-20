@@ -94,15 +94,23 @@ function StackedBar({ theme }) {
         labels,
         datasets: [
             {
+                type: 'line',
+                fill: false,
+                data: ['41777', '45768', '40654', '38144'],
+                borderColor: theme === 'dark' ? '#fff' : '#DEDEDE',
+                borderWidth: 1,
+            },
+            {
                 barThickness: 45,
                 maxBarThickness: 45,
                 data: ['41777', '45768', '40654', '38144'],
                 backgroundColor: '#23A1BD',
             },
+
             {
                 type: 'line',
                 fill: false,
-                data: ['41777', '45768', '40654', '38144'],
+                data: ['226950', '226950', '199768', '175862'],
                 borderColor: theme === 'dark' ? '#fff' : '#DEDEDE',
                 borderWidth: 1,
             },
@@ -112,10 +120,11 @@ function StackedBar({ theme }) {
                 barThickness: 45,
                 maxBarThickness: 45,
             },
+
             {
                 type: 'line',
                 fill: false,
-                data: ['226950', '226950', '199768', '175862'],
+                data: ['329712', '218795', '584255', '636843'],
                 borderColor: theme === 'dark' ? '#fff' : '#DEDEDE',
                 borderWidth: 1,
             },
@@ -125,13 +134,6 @@ function StackedBar({ theme }) {
                 barThickness: 45,
                 maxBarThickness: 45,
                 color: colors
-            },
-            {
-                type: 'line',
-                fill: false,
-                data: ['329712', '218795', '584255', '636843'],
-                borderColor: theme === 'dark' ? '#fff' : '#DEDEDE',
-                borderWidth: 1,
             },
         ],
 
