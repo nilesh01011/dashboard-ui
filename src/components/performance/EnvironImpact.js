@@ -10,7 +10,7 @@ function EnvironImpact({ theme }) {
         {/* heading */}
         <div className="flex justify-between w-full gap-4 lg:flex-row flex-col">
           {/* title text */}
-          <div className="flex items-center gap-2 whitespace-nowrap leading-4">
+          <div className="flex items-center gap-[6px] whitespace-nowrap leading-4">
             <svg className="h-[20px]"
               width="26"
               height="20"
