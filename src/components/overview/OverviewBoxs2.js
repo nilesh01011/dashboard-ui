@@ -23,7 +23,7 @@ function OverviewBoxs2({ theme }) {
                         <div className={`w-full divide-y ${theme === 'dark' ? 'divide-[#635D5D]' : 'divide-[#DEDEDE]'}`}>
                             {/* box one */}
                             <div className={`w-full h-auto flex flex-col`}>
-                                <div className='p-[16px] pb-0'><span className={`${theme === 'dark' ? 'text-white' : 'text-[#342C2C]'}`}>Per Vehicle Manufactured</span></div>
+                                <div className='p-[16px] pt-[20px] pb-0'><span className={`${theme === 'dark' ? 'text-white' : 'text-[#342C2C]'}`}>Per Vehicle Manufactured</span></div>
                                 <div className='flex items-center p-[16px] pb-0'>
                                     <div className='w-1/2 px-1 flex items-center'>
                                         {/* icons */}
@@ -80,7 +80,7 @@ function OverviewBoxs2({ theme }) {
                             </div>
                             {/* box two */}
                             <div className={`w-full h-auto flex flex-col`}>
-                                <div className='p-[16px] pb-0'><span className={`${theme === 'dark' ? 'text-white' : 'text-[#342C2C]'}`}>Per ₹1,00,000 Turnover</span></div>
+                                <div className='p-[16px] pt-[20px] pb-0'><span className={`${theme === 'dark' ? 'text-white' : 'text-[#342C2C]'}`}>Per ₹1,00,000 Turnover</span></div>
                                 <div className='flex items-center p-[16px] pb-0'>
                                     <div className='w-1/2 px-1 flex items-center'>
                                         {/* icons */}
@@ -127,7 +127,7 @@ function OverviewBoxs2({ theme }) {
                             </div>
                             {/* box three */}
                             <div className={`w-full h-auto flex flex-col`}>
-                                <div className='p-[16px] pb-0'><span className={`${theme === 'dark' ? 'text-white' : 'text-[#342C2C]'}`}>Per kWh Electricity</span></div>
+                                <div className='p-[16px] pt-[20px] pb-0'><span className={`${theme === 'dark' ? 'text-white' : 'text-[#342C2C]'}`}>Per kWh Electricity</span></div>
                                 <div className='flex items-center p-[16px] pb-0'>
                                     <div className='w-1/2 px-1 flex items-center'>
                                         {/* icons */}
