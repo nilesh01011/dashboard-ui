@@ -60,25 +60,25 @@ function TableList({ theme }) {
                                                     <th
                                                         key={ele.id}
                                                         scope="col"
-                                                        className={`${ele.id === 1 ? 'text-left' : 'text-end'}  px-6 py-3 text-xs font-bold capitalize ${theme === 'dark' ? 'text-white' : 'text-gray-500'}`}>
+                                                        className={`${ele.id === 1 ? 'text-left' : 'text-end'}  px-6 py-3 text-[12px] font-bold capitalize ${theme === 'dark' ? 'text-white' : 'text-gray-500'}`}>
                                                         {ele.title}
                                                     </th>
                                                 ))
                                             }
                                         </tr>
                                     </thead>
-                                    <tbody className={`divide-y-[1px] ${theme === 'dark' ? 'divide-[#635D5D] bg-[#242424]' : 'divide-gray-200 bg-white'} w-full`}>
+                                    <tbody className={`divide-y-[1px] ${theme === 'dark' ? 'divide-[#635D5D]' : 'divide-gray-200'} w-full ${theme === 'dark' ? 'bg-[#242424]' : 'bg-white'}`}>
                                         {
                                             items.slice(0, limitsData).map((elem) => {
                                                 return (
                                                     <tr key={elem.id} >
-                                                        <td className={`pl-6 pr-4 py-4 text-sm font-medium whitespace-nowrap capitalize ${theme === 'dark' ? 'text-white' : 'text-gray-800'}`}>
+                                                        <td className={`pl-6 pr-4 py-4 text-[14px] font-medium whitespace-nowrap capitalize ${theme === 'dark' ? 'text-white' : 'text-gray-800'}`}>
                                                             {elem.title}
                                                         </td>
                                                         {
                                                             elem.countersData.map((data) => (
-                                                                <td key={data.id} className={`pl-6 pr-4 py-4 text-sm ${theme === 'dark' ? 'text-white' : 'text-gray-800'}`}>
-                                                                    <div className='flex items-baseline leading-4 gap-2 justify-end xl:text-sm text-[12px]'>
+                                                                <td key={data.id} className={`px-4 py-4 w-max whitespace-nowrap text-sm ${theme === 'dark' ? 'text-white' : 'text-gray-800'}`}>
+                                                                    <div className='flex items-baseline w-[139px] leading-4 gap-2 justify-end xl:text-sm text-[12px]'>
                                                                         {data.countsNumber}
                                                                         <img className='h-[11px]' src={data.image} alt='growths-images' />
                                                                     </div>
