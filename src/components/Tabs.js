@@ -40,8 +40,8 @@ function Tabs() {
     return (
         <>
             <div className='w-full h-auto xl:px-14 md:px-10 px-4'>
-                <div className='flex flex-col '>
-                    <div className="mb-4 mt-6 flex lg:flex-row flex-col border-b-[1px] border-[#635D5D]">
+                <div className='flex flex-col'>
+                    <div className={`mb-4 mt-2 flex lg:flex-row flex-col border-b-[1px] ${theme === 'dark' ? 'border-[#635D5D]' : 'border-[#DEDEDE]'}`}>
                         {/* nav tabs */}
                         <nav
                             className="lg:w-[85%] md:w-[70%] w-full mr-auto flex flex-row relative lg:order-1 order-2"
@@ -54,8 +54,8 @@ function Tabs() {
                                         handleNav(tab.name);
                                     }}
                                     className={` ${tab.current || theme === 'light' ? '' : 'border-[#635D5D]'} ${tab.current
-                                        ? "font-[550] w-1/2 text-center flex items-center justify-center border-b-2 border-[#FF3E5B]"
-                                        : "text-[#8E8585] font-[550] w-1/2 text-center whitespace-nowrap py-1 px-1 border-b-2"
+                                        ? "font-[550] w-1/2 flex leading-7 items-end justify-center border-b-2 border-[#FF3E5B]"
+                                        : "text-[#8E8585] flex leading-7 items-end justify-center font-[550] w-1/2 text-center whitespace-nowrap px-1 border-b-2"
                                         }
                                         ${theme === 'dark' ? 'text-white' : 'text-black'}`}
                                 >
@@ -67,7 +67,7 @@ function Tabs() {
 
                         {/* dark and light mode switch */}
                         <div className='w-full flex items-end justify-end lg:order-2 order-1'>
-                            <button className={`w-[36px] h-[36px] p-2 lg:mb-5 mb-3 rounded-full ${theme === 'light' ? 'bg-white' : 'bg-[#242424]'} shadow-[0_0_8px_0_rgba(0,0,0,0.35)]`} onClick={() => switchThemeHandler()}>
+                            <button className={`w-[34px] h-[34px] p-2 mb-3 rounded-full ${theme === 'light' ? 'bg-white' : 'bg-[#242424]'} shadow-[0_0_8px_0_rgba(0,0,0,0.35)]`} onClick={() => switchThemeHandler()}>
                                 {
                                     theme === "dark" ?
                                         <img src='./images/darkmoon.svg' alt='moon' /> : <img src='./images/lightmoon.svg' alt='moon' />
