@@ -111,7 +111,7 @@ function LineChart({ theme }) {
                         <div className={`flex md:flex-row flex-col md:items-center justify-between ${theme === 'dark' ? 'bg-[#635D5D]' : 'bg-[#F4F4F4]'} px-4 py-3 mb-2 rounded-[0.5rem_0.5rem_0_0]`}>
                             <h1 className={`sm:text-lg text-sm font-bold w-full ${theme === 'dark' ? 'text-white' : 'text-[#0B0B0C]'} `}>Emission per Vehicle Manufactured</h1>
                             <div className='flex items-center gap-2'>
-                                <span className={`w-[26px] h-[3px] ${theme === 'dark' ? 'bg-white' : 'bg-black'}`}></span>
+                                <span className={`w-[32px] h-[3px] rounded-sm ${theme === 'dark' ? 'bg-white' : 'bg-black'}`}></span>
                                 <p className={`sm:text-lg text-sm ${theme === 'dark' ? 'text-white' : 'text-black'}`}>Emission</p>
                             </div>
                         </div>

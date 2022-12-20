@@ -19,11 +19,11 @@ function Overview({ theme }) {
         {/* title and selectboxs */}
         <div className="flex xl:items-center items-start xl:gap-0 gap-4 justify-between mb-7 xl:flex-row flex-col">
           {/* titles */}
-          <div className="flex items-center gap-2">
-            <svg
+          <div className="flex items-start gap-1 leading-4">
+            <svg className="h-[18px]"
               width="26"
-              height="26"
-              viewBox="0 0 26 26"
+              height="18"
+              viewBox="0 0 26 30"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
             >
@@ -52,7 +52,7 @@ function Overview({ theme }) {
                 fill={`${theme === 'dark' ? '#fff' : '#0B0B0C'}`}
               />
             </svg>
-            <h1 className={`font-bold sm:text-2xl text-lg ${theme === 'dark' ? 'text-white' : 'text-black'}`}>Dashboard</h1>
+            <h1 className={`font-bold text-[20px] ${theme === 'dark' ? 'text-white' : 'text-black'}`}>Dashboard</h1>
           </div>
 
           {/* selectBox */}

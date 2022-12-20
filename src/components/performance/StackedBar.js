@@ -97,7 +97,7 @@ function StackedBar({ theme }) {
                 barThickness: 45,
                 maxBarThickness: 45,
                 data: ['41777', '45768', '40654', '38144'],
-                backgroundColor: '#2F575D',
+                backgroundColor: '#23A1BD',
             },
             {
                 type: 'line',
@@ -108,7 +108,7 @@ function StackedBar({ theme }) {
             },
             {
                 data: ['226950', '226950', '199768', '175862'],
-                backgroundColor: '#529863',
+                backgroundColor: '#55D698',
                 barThickness: 45,
                 maxBarThickness: 45,
             },
@@ -121,7 +121,7 @@ function StackedBar({ theme }) {
             },
             {
                 data: ['329712', '218795', '584255', '636843'],
-                backgroundColor: '#70AD47',
+                backgroundColor: '#7CD744',
                 barThickness: 45,
                 maxBarThickness: 45,
                 color: colors
@@ -158,17 +158,17 @@ function StackedBar({ theme }) {
                             <div className='flex items-center gap-3'>
                                 {/* Scope 1 */}
                                 <div className='flex items-center gap-2'>
-                                    <span className='w-[5px] p-[5px] bg-[#2F575D]'></span>
+                                    <span className='w-[5px] p-[5px] bg-[#23A1BD]'></span>
                                     <span className={`text-sm ${theme === 'dark' ? 'text-white' : 'text-black'}`}>Scope 1</span>
                                 </div>
                                 {/* Scope 2 */}
                                 <div className='flex items-center gap-2'>
-                                    <span className='w-[5px] p-[5px] bg-[#529863]'></span>
+                                    <span className='w-[5px] p-[5px] bg-[#55D698]'></span>
                                     <span className={`text-sm ${theme === 'dark' ? 'text-white' : 'text-black'}`}>Scope 2</span>
                                 </div>
                                 {/* Scope 3 */}
                                 <div className='flex items-center gap-2'>
-                                    <span className='w-[5px] p-[5px] bg-[#70AD47]'></span>
+                                    <span className='w-[5px] p-[5px] bg-[#7CD744]'></span>
                                     <span className={`text-sm ${theme === 'dark' ? 'text-white' : 'text-black'}`}>Scope 3</span>
                                 </div>
                             </div>

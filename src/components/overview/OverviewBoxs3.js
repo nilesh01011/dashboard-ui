@@ -60,9 +60,8 @@ function OverviewBoxs3({ theme }) {
                         </div>
                         <div className='p-[16px]'>
                             <div className='h-[225px] w-full flex items-center justify-center my-2 relative'>
-                                <Doughnut data={data} options={options} />
 
-                                <div className='flex items-center justify-center absolute top-[28%]'>
+                                <div className='flex items-center justify-center absolute top-[28%] z-[1]'>
                                     <div className='flex items-center justify-center flex-col'>
                                         <h1 className={`${theme === 'dark' ? 'text-white' : 'text-black'} font-bold text-2xl`}>14,87,429</h1>
                                         <sup className={`${theme === 'dark' ? 'text-white' : 'text-black'} text-[12px] mt-4 mb-3`}>(kgCO2e)</sup>
@@ -80,6 +79,8 @@ function OverviewBoxs3({ theme }) {
                                         </div>
                                     </div>
                                 </div>
+
+                                <Doughnut data={data} options={options} className='z-10' />
                             </div>
 
                             <div className='w-full pt-4 flex flex-col gap-[16px]'>

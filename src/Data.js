@@ -99,43 +99,43 @@ export const doughnutData = [
         id: 1,
         name: 'Electricity from grid',
         data: 54,
-        bgColor: '#38565C'
+        bgColor: '#7CD744'
     },
     {
         id: 2,
         name: 'LPG',
         data: 5,
-        bgColor: '#213337'
+        bgColor: '#23A1BD'
     },
     {
         id: 3,
         name: 'Diesel/HSD',
         data: 10,
-        bgColor: '#7EAC55'
+        bgColor: '#55D698'
     },
     {
         id: 4,
         name: 'Natural Gas & CNG',
         data: 18,
-        bgColor: '#4B6733'
+        bgColor: '#7255E7'
     },
     {
         id: 5,
         name: 'Petrol',
         data: 1,
-        bgColor: '#6D8970'
+        bgColor: '#E85771'
     },
     {
         id: 6,
         name: 'Propone',
         data: 7,
-        bgColor: '#57838D'
+        bgColor: '#FFCF24'
     },
     {
         id: 7,
         name: 'Renewable energy source',
         data: 5,
-        bgColor: '#415243'
+        bgColor: '#1E4AE4'
     },
 ]
 

@@ -6,11 +6,12 @@ function Trends({ theme }) {
   return (
     <>
       <div className="flex flex-col">
-        <div className="flex items-center gap-2 mb-6">
+        <div className="flex items-center gap-1 leading-4 mb-6">
           <svg
-            width="22"
-            height="30"
-            viewBox="0 0 22 30"
+            className="h-[19px]"
+            width="26"
+            height="19"
+            viewBox="0 0 26 32"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
           >
@@ -22,9 +23,8 @@ function Trends({ theme }) {
             />
           </svg>
           <h1
-            className={`font-bold sm:text-2xl text-lg ${
-              theme === "dark" ? "text-white" : "text-black"
-            }`}
+            className={`font-bold text-[20px] ${theme === "dark" ? "text-white" : "text-black"
+              }`}
           >
             Trends YoY
           </h1>

@@ -16,8 +16,10 @@ function App() {
 
   return (
     <>
-      <Header />
-      <Tabs />
+      <div className="max-w-[1260px] mx-auto">
+        <Header />
+        <Tabs />
+      </div>
     </>
   );
 }

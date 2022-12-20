@@ -78,9 +78,9 @@ function TableList({ theme }) {
                                                         {
                                                             elem.countersData.map((data) => (
                                                                 <td key={data.id} className={`pl-6 pr-4 py-4 text-sm ${theme === 'dark' ? 'text-white' : 'text-gray-800'}`}>
-                                                                    <div className='flex items-center gap-2 justify-end xl:text-sm text-[12px]'>
+                                                                    <div className='flex items-baseline leading-4 gap-2 justify-end xl:text-sm text-[12px]'>
                                                                         {data.countsNumber}
-                                                                        <img className='h-[9px]' src={data.image} alt='growths' />
+                                                                        <img className='h-[11px]' src={data.image} alt='growths-images' />
                                                                     </div>
                                                                 </td>
                                                             ))

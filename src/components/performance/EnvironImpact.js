@@ -10,11 +10,11 @@ function EnvironImpact({ theme }) {
         {/* heading */}
         <div className="flex justify-between w-full gap-4 lg:flex-row flex-col">
           {/* title text */}
-          <div className="flex items-center gap-2 whitespace-nowrap">
-            <svg
-              width="36"
-              height="36"
-              viewBox="0 0 36 36"
+          <div className="flex items-center gap-2 whitespace-nowrap leading-4">
+            <svg className="h-[20px]"
+              width="26"
+              height="20"
+              viewBox="0 0 26 33"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
             >
@@ -38,7 +38,7 @@ function EnvironImpact({ theme }) {
                 fill={`${theme === 'dark' ? 'white' : 'black'}`}
               />
             </svg>
-            <h1 className={`font-bold sm:text-2xl text-lg ${theme === 'dark' ? 'text-white' : 'text-black'}`}>
+            <h1 className={`font-bold text-[20px] ${theme === 'dark' ? 'text-white' : 'text-black'}`}>
               Environmental Impact
             </h1>
           </div>
