@@ -108,7 +108,7 @@ function OverviewBottomSide({ theme }) {
                                     </div>
                                 </div>
                                 <div className='sm:w-[45%] p-0 flex flex-col justify-center items-center relative sm:pt-0 pt-4'>
-                                    <div className='w-full flex justify-center items-center sm:h-[160px] h-[180px] sm:-mt-[16px] -mt-[24px] gap-2'>
+                                    <div className='w-full flex justify-center items-center sm:h-[160px] h-[180px] sm:-mt-[32px] -mt-[24px] gap-2'>
                                         {/* Doughnuts Charts */}
                                         <div className='xl:w-1/2 w-[170px] flex justify-center items-center h-max sm:-mt-0 -mt-[40px]'>
                                             <Doughnut
