@@ -513,17 +513,17 @@ export const tableData = [
         countersData: [
             {
                 id: 18.1,
-                countsNumber: '62,395 (84% recycled)',
+                countsNumber: '62,395',
                 image: './images/Polygon2.svg',
             },
             {
                 id: 18.2,
-                countsNumber: '53,172 (86% recycled)',
+                countsNumber: '53,172',
                 image: './images/Polygon2.svg',
             },
             {
                 id: 18.3,
-                countsNumber: '51,316 (87% recycled)',
+                countsNumber: '51,316',
                 image: './images/Polygon2.svg',
             },
         ]
@@ -597,21 +597,20 @@ export const lineChartData = [
     },
 ]
 
-
 export const stackedChartData = [
     {
         id: 1,
         bgColor: '#2F575D',
-        dataList: ['41777', '45768', '40654', '38144'],
+        dataList: [41777, 45768, 40654, 38144],
     },
     {
         id: 2,
         bgColor: '#529863',
-        dataList: ['226950', '226950', '199768', '175862'],
+        dataList: [226950, 226950, 199768, 175862],
     },
     {
         id: 3,
         bgColor: '#70AD47',
-        dataList: ['329712', '218795', '584255', '636843'],
+        dataList: [329712, 218795, 584255, 636843],
     },
 ]
