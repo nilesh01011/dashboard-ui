@@ -513,17 +513,17 @@ export const tableData = [
         countersData: [
             {
                 id: 18.1,
-                countsNumber: '62,395',
+                countsNumber: '62,395 (84%)',
                 image: './images/Polygon2.svg',
             },
             {
                 id: 18.2,
-                countsNumber: '53,172',
+                countsNumber: '53,172 (86%)',
                 image: './images/Polygon2.svg',
             },
             {
                 id: 18.3,
-                countsNumber: '51,316',
+                countsNumber: '51,316 (87%)',
                 image: './images/Polygon2.svg',
             },
         ]
