@@ -16,7 +16,7 @@ function OverviewBottomSide({ theme }) {
         datasets: [
             {
                 data: [4761, 50000],
-                backgroundColor: ["#7EAC55", "rgba(222, 222, 222, 1)"],
+                backgroundColor: ["#6BD12C", "rgba(222, 222, 222, 1)"],
                 borderColor: ["#aaa"],
                 borderWidth: 0,
             }
@@ -63,7 +63,7 @@ function OverviewBottomSide({ theme }) {
                         <div className='xl:w-[66%] rounded-lg shadow-[0_0_3px_rgba(0,0,0,0.2)]'>
                             {/* title */}
                             <div className={`w-full h-[46px] ${theme === 'dark' ? 'bg-[#635D5D]' : 'bg-[#F4F4F4]'} rounded-[0.5rem_0.5rem_0_0] p-[11px_18px]`}>
-                                <h2 className={`${theme === 'dark' ? 'text-[#fff]' : 'text-[#635D5D]'}`}>Total Carbon in Business Travel</h2>
+                                <h2 className={`${theme === 'dark' ? 'text-[#fff]' : 'text-[#635D5D]'} font-bold`}>Total Carbon in Business Travel</h2>
                             </div>
                             {/* content */}
                             <div className={`w-full flex sm:flex-row flex-col justify-between sm:h-[170px] h-auto sm:divide-x-[1px] divide-x-0 sm:divide-y-0 divide-y-[1px] ${theme === 'dark' ? 'bg-[#242424] divide-[#635D5D]' : 'bg-[#fff] divide-[#DEDEDE]'} rounded-[0_0_0.5rem_0.5rem]`}>
@@ -87,12 +87,12 @@ function OverviewBottomSide({ theme }) {
                                     <div className='flex justify-between mt-[26px]'>
                                         <div className='w-4/12'>
                                             <h3 className={`text-2xl font-semibold ${theme === 'dark' ? 'text-white' : 'text-black'}`}>114,740</h3>
-                                            <sup className={`text-[10px] ${theme === 'dark' ? 'text-white' : 'text-[#342C2C]'}`}>(kgCO2)</sup>
+                                            <span className={`text-[10px] ${theme === 'dark' ? 'text-white' : 'text-[#342C2C]'}`}>(kgCO<sub>2</sub>)</span>
                                         </div>
                                         <div className='w-1/2 flex items-baseline gap-2'>
                                             <div>
                                                 <h3 className={`text-2xl font-semibold ${theme === 'dark' ? 'text-white' : 'text-black'}`}>89,683</h3>
-                                                <sup className={`text-[10px] ${theme === 'dark' ? 'text-white' : 'text-[#342C2C]'}`}>(kgCO2)</sup>
+                                                <span className={`text-[10px] ${theme === 'dark' ? 'text-white' : 'text-[#342C2C]'}`}>(kgCO<sub>2</sub>)</span>
                                             </div>
                                             {/* percentage */}
                                             <div className='flex leading-4'>
@@ -133,10 +133,10 @@ function OverviewBottomSide({ theme }) {
                         {/* bottom right sides */}
                         <div className='xl:w-[32.2%] rounded-lg shadow-[0_0_3px_rgba(0,0,0,0.2)]'>
                             <div className={`w-full h-[46px] ${theme === 'dark' ? 'bg-[#635D5D]' : 'bg-[#F4F4F4]'} rounded-[0.5rem_0.5rem_0_0] p-[11px_20px]`}>
-                                <h2 className={`${theme === 'dark' ? 'text-[#fff]' : 'text-[#635D5D]'}`}>Carbon Offsets</h2>
+                                <h2 className={`${theme === 'dark' ? 'text-[#fff]' : 'text-[#635D5D]'} font-bold`}>Carbon Offsets</h2>
                             </div>
                             <div className={`w-full h-[170px] ${theme === 'dark' ? 'bg-[#242424]' : 'bg-[#fff]'} rounded-[0_0_0.5rem_0.5rem]`}>
-                                <div className={`p-[20px] divide-y ${theme === 'dark' ? 'divide-[#635D5D]' : 'divide-[#DEDEDE]'}`}>
+                                <div className={`p-[20px] divide-y-[1px] ${theme === 'dark' ? 'divide-[#635D5D]' : 'divide-[#DEDEDE]'}`}>
                                     <div className='flex justify-between items-center py-[20px]'>
                                         <h3 className={` ${theme === 'dark' ? 'text-white' : 'text-[#342C2C]'}`}>Carbon Credits</h3>
                                         <p className={`${theme === 'dark' ? 'text-white' : 'text-[#342C2C]'} text-base`}>
