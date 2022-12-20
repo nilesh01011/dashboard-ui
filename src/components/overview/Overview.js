@@ -14,7 +14,7 @@ import SelectBox from "../SelectBox";
 function Overview({ theme }) {
 
   return (
-    <div className="mt-8">
+    <div className="mt-4">
       <div className="flex flex-col">
         {/* title and selectboxs */}
         <div className="flex xl:items-center items-start xl:gap-0 gap-4 justify-between mb-7 xl:flex-row flex-col">

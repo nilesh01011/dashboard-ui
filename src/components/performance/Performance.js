@@ -2,10 +2,10 @@ import React from 'react'
 import EnvironImpact from './EnvironImpact'
 import Trends from './Trends'
 
-function MainContent({theme}) {
+function MainContent({ theme }) {
     return (
         <>
-            <div className='mt-8'>
+            <div className='mt-4'>
                 {/* Trends and charts.JS */}
                 <div>
                     <Trends theme={theme} />

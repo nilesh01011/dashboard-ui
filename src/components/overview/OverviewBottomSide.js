@@ -66,7 +66,7 @@ function OverviewBottomSide({ theme }) {
                                 <h2 className={`${theme === 'dark' ? 'text-[#fff]' : 'text-[#635D5D]'}`}>Total Carbon in Business Travel</h2>
                             </div>
                             {/* content */}
-                            <div className={`w-full flex sm:flex-row flex-col justify-between sm:h-[170px] h-auto sm:divide-x divide-x-0 sm:divide-y-0 divide-y-[1px] divide-[#DEDEDE] ${theme === 'dark' ? 'bg-[#242424] ' : 'bg-[#fff]'} rounded-[0_0_0.5rem_0.5rem]`}>
+                            <div className={`w-full flex sm:flex-row flex-col justify-between sm:h-[170px] h-auto sm:divide-x-[1px] divide-x-0 sm:divide-y-0 divide-y-[1px] ${theme === 'dark' ? 'bg-[#242424] divide-[#635D5D]' : 'bg-[#fff] divide-[#DEDEDE]'} rounded-[0_0_0.5rem_0.5rem]`}>
                                 <div className='sm:w-[55%] md:pb-0 pb-4 p-[19px]'>
                                     {/* icons */}
                                     <div className='flex justify-between'>

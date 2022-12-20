@@ -20,9 +20,9 @@ function OverviewBoxs2({ theme }) {
                         <div className={`w-full h-[46px] ${theme === 'dark' ? 'bg-[#635D5D]' : 'bg-[#F4F4F4]'} flex items-center gap-[6px] p-[16px] rounded-[0.5rem_0.5rem_0_0]`}>
                             <h3 className={`${theme === 'dark' ? 'text-white' : 'text-[#635D5D]'} font-[600]`}>Intensity Metrics</h3>
                         </div>
-                        <div className='w-full'>
+                        <div className={`w-full divide-y ${theme === 'dark' ? 'divide-[#635D5D]' : 'divide-[#DEDEDE]'}`}>
                             {/* box one */}
-                            <div className={`w-full h-auto flex flex-col border-b-2 ${theme === 'dark' ? 'border-[#635D5D]' : 'border-[#DEDEDE]'}`}>
+                            <div className={`w-full h-auto flex flex-col`}>
                                 <div className='p-[16px] pb-0'><span className={`${theme === 'dark' ? 'text-white' : 'text-[#342C2C]'}`}>Per Vehicle Manufactured</span></div>
                                 <div className='flex items-center p-[16px] pb-0'>
                                     <div className='w-1/2 px-1 flex items-center'>
@@ -79,7 +79,7 @@ function OverviewBoxs2({ theme }) {
                                 </div>
                             </div>
                             {/* box two */}
-                            <div className={`w-full h-auto flex flex-col border-b-2 ${theme === 'dark' ? 'border-[#635D5D]' : 'border-[#DEDEDE]'}`}>
+                            <div className={`w-full h-auto flex flex-col`}>
                                 <div className='p-[16px] pb-0'><span className={`${theme === 'dark' ? 'text-white' : 'text-[#342C2C]'}`}>Per ₹1,00,000 Turnover</span></div>
                                 <div className='flex items-center p-[16px] pb-0'>
                                     <div className='w-1/2 px-1 flex items-center'>

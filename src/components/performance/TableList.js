@@ -52,7 +52,7 @@ function TableList({ theme }) {
                     <div>
                         <div className="w-full lg:overflow-x-hidden overflow-x-scroll no-scrollbar shadow-[0_0_3px_rgba(0,0,0,0.2)] rounded-lg">
                             <div id='overflowScroll' className='w-full h-full'>
-                                <table className={`w-full divide-y ${theme === 'dark' ? 'divide-[#635D5D]' : 'divide-gray-200'}`}>
+                                <table className={`w-full divide-y-[1px] ${theme === 'dark' ? 'divide-[#635D5D]' : 'divide-gray-200'}`}>
                                     <thead className={`w-full ${theme === 'dark' ? 'bg-[#635D5D]' : 'bg-[#F4F4F4]'}`}>
                                         <tr>
                                             {
@@ -67,7 +67,7 @@ function TableList({ theme }) {
                                             }
                                         </tr>
                                     </thead>
-                                    <tbody className={`divide-y ${theme === 'dark' ? 'divide-[#635D5D]' : 'divide-gray-200'} w-full ${theme === 'dark' ? 'bg-[#242424]' : 'bg-white'}`}>
+                                    <tbody className={`divide-y-[1px] ${theme === 'dark' ? 'divide-[#635D5D] bg-[#242424]' : 'divide-gray-200 bg-white'} w-full`}>
                                         {
                                             items.slice(0, limitsData).map((elem) => {
                                                 return (

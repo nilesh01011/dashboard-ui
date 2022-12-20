@@ -40,8 +40,8 @@ function Tabs() {
     return (
         <>
             <div className='w-full h-auto xl:px-14 md:px-10 px-4'>
-                <div className='flex flex-col mt-4'>
-                    <div className="mb-4 mt-6 flex lg:flex-row flex-col border-b border-[#635D5D]">
+                <div className='flex flex-col '>
+                    <div className="mb-4 mt-6 flex lg:flex-row flex-col border-b-[1px] border-[#635D5D]">
                         {/* nav tabs */}
                         <nav
                             className="lg:w-[85%] md:w-[70%] w-full mr-auto flex flex-row relative lg:order-1 order-2"

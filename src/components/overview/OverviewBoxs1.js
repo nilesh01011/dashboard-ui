@@ -22,9 +22,9 @@ function OverviewBoxs1({ theme }) {
                                 <h3 className={`${theme === 'dark' ? 'text-white' : 'text-[#635D5D]'} font-[600]`}>Total Carbon Footprint</h3>
                                 <p className={`text-sm ${theme === 'dark' ? 'text-white' : 'text-[#635D5D]'}`}>(Scope 1 & Scope 2)</p>
                             </div>
-                            <div className='w-full'>
+                            <div className={`w-full divide-y ${theme === 'dark' ? 'divide-[#635D5D]' : 'divide-[#DEDEDE]'}`}>
                                 {/* box 1 */}
-                                <div className={`w-full h-auto flex flex-col border-b-2 ${theme === 'dark' ? 'border-[#635D5D]' : 'border-[#DEDEDE]'}`}>
+                                <div className={`w-full h-auto flex flex-col`}>
                                     <div className='flex items-center p-[16px] pb-0'>
                                         <div className='w-1/2 px-1 flex items-center'>
                                             {/* icons */}
@@ -94,9 +94,9 @@ function OverviewBoxs1({ theme }) {
                                     </div>
                                 </div>
                                 {/* box 2 */}
-                                <div className='w-full h-auto flex flex-col p-[16px]'>
+                                <div className={`w-full h-auto flex flex-col p-[16px] divide-y ${theme === 'dark' ? 'divide-[#635D5D]' : 'divide-[#DEDEDE]'}`}>
                                     {/* Box 2.1 */}
-                                    <div className={`h-auto border-b-2 ${theme === 'dark' ? 'border-[#635D5D]' : 'border-[#DEDEDE]'}`}>
+                                    <div className={`h-auto`}>
                                         <div className='w-full'>
                                             <div><span className={`${theme === 'dark' ? 'text-white' : 'text-[#342C2C]'} sm:text-base text-[12px]`}>Scope 1- Direct Emission</span></div>
                                             <div className='flex justify-between pt-4 pb-6'>
@@ -124,7 +124,7 @@ function OverviewBoxs1({ theme }) {
                                     </div>
 
                                     {/* Box 2.2 */}
-                                    <div className={`h-auto border-b-2 ${theme === 'dark' ? 'border-[#635D5D]' : 'border-[#DEDEDE]'} pt-4`}>
+                                    <div className={`h-auto pt-4`}>
                                         <div className='w-full'>
                                             <div><span className={`${theme === 'dark' ? 'text-white' : 'text-[#342C2C]'} sm:text-base text-[12px]`}>Scope 2- Electricity Indirect Emission</span></div>
                                             <div className='flex justify-between pt-4 pb-6'>

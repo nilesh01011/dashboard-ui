@@ -10,7 +10,7 @@ import {
 } from 'chart.js';
 import { Bar } from 'react-chartjs-2';
 import GraphSkeletonLoading from '../loadingPerformance/GraphSkeletonLoading';
-import { stackedChartData } from '../../Data';
+// import { stackedChartData } from '../../Data';
 
 ChartJS.register(
     CategoryScale,
