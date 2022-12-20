@@ -54,15 +54,15 @@ function OverviewBoxs2({ theme }) {
                                         <span className={`${theme === 'dark' ? 'text-white' : 'text-black'} text-sm font-semibold ml-3`}>FY21</span>
                                     </div>
                                 </div>
-                                <div className='flex justify-between items-center p-[16px] pb-[1.2rem]'>
+                                <div className='flex justify-between items-center p-[16px] pt-[14px] pb-[22px]'>
                                     <div className='flex w-full justify-between'>
                                         <div className='w-5/12'>
-                                            <h1 className={`text-2xl font-semibold ${theme === 'dark' ? 'text-white' : 'text-[#635D5D]'}`}>1200</h1>
+                                            <h1 className={`text-[26px] font-semibold ${theme === 'dark' ? 'text-white' : 'text-[#635D5D]'}`}>1200</h1>
                                             <span className={`text-[10px] ${theme === 'dark' ? 'text-white' : 'text-[#342C2C]'}`}>tCO <sub>2</sub></span>
                                         </div>
                                         <div className='w-1/2 flex items-baseline gap-2'>
                                             <div>
-                                                <h1 className={`text-2xl font-semibold ${theme === 'dark' ? 'text-white' : 'text-[#635D5D]'}`}>1100</h1>
+                                                <h1 className={`text-[26px] font-semibold ${theme === 'dark' ? 'text-white' : 'text-[#635D5D]'}`}>1100</h1>
                                                 <span className={`text-[10px] ${theme === 'dark' ? 'text-white' : 'text-[#342C2C]'}`}>tCO <sub>2</sub></span>
                                             </div>
                                             <div className='flex leading-4'>
@@ -101,15 +101,15 @@ function OverviewBoxs2({ theme }) {
                                         <span className={`${theme === 'dark' ? 'text-white' : 'text-black'} text-sm font-semibold ml-3`}>FY21</span>
                                     </div>
                                 </div>
-                                <div className='flex justify-between items-center p-[16px] pb-[1.2rem]'>
+                                <div className='flex justify-between items-center p-[16px] pt-[14px] pb-[22px]'>
                                     <div className='flex w-full justify-between'>
                                         <div className='w-5/12'>
-                                            <h1 className={`text-2xl font-semibold ${theme === 'dark' ? 'text-white' : 'text-[#635D5D]'}`}>120</h1>
+                                            <h1 className={`text-[26px] font-semibold ${theme === 'dark' ? 'text-white' : 'text-[#635D5D]'}`}>120</h1>
                                             <span className={`text-[10px] ${theme === 'dark' ? 'text-white' : 'text-[#342C2C]'}`}>(tCO <sub>2</sub>)</span>
                                         </div>
                                         <div className='w-1/2 flex items-baseline gap-2'>
                                             <div>
-                                                <h1 className={`text-2xl font-semibold ${theme === 'dark' ? 'text-white' : 'text-[#635D5D]'}`}>110</h1>
+                                                <h1 className={`text-[26px] font-semibold ${theme === 'dark' ? 'text-white' : 'text-[#635D5D]'}`}>110</h1>
                                                 <span className={`text-[10px] ${theme === 'dark' ? 'text-white' : 'text-[#342C2C]'}`}>(tCO <sub>2</sub>)</span>
                                             </div>
                                             <div className='flex leading-4'>
@@ -150,15 +150,15 @@ function OverviewBoxs2({ theme }) {
                                         <span className={`${theme === 'dark' ? 'text-white' : 'text-black'} text-sm font-semibold ml-3`}>FY21</span>
                                     </div>
                                 </div>
-                                <div className='flex justify-between items-center p-[16px] pb-[1.2rem]'>
+                                <div className='flex justify-between items-center p-[16px] pt-[14px] pb-3'>
                                     <div className='flex w-full justify-between'>
                                         <div className='w-5/12'>
-                                            <h1 className={`text-2xl font-semibold ${theme === 'dark' ? 'text-white' : 'text-[#635D5D]'}`}>0.86</h1>
+                                            <h1 className={`text-[26px] font-semibold ${theme === 'dark' ? 'text-white' : 'text-[#635D5D]'}`}>0.86</h1>
                                             <span className={`text-[10px] ${theme === 'dark' ? 'text-white' : 'text-[#342C2C]'}`}>tCO <sub>2</sub></span>
                                         </div>
                                         <div className='w-1/2 flex items-baseline gap-2'>
                                             <div>
-                                                <h1 className={`text-2xl font-semibold ${theme === 'dark' ? 'text-white' : 'text-[#635D5D]'}`}>0.90</h1>
+                                                <h1 className={`text-[26px] font-semibold ${theme === 'dark' ? 'text-white' : 'text-[#635D5D]'}`}>0.90</h1>
                                                 <span className={`text-[10px] ${theme === 'dark' ? 'text-white' : 'text-[#342C2C]'}`}>tCO <sub>2</sub></span>
                                             </div>
                                             <div className='flex leading-4'>

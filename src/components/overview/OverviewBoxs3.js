@@ -83,7 +83,7 @@ function OverviewBoxs3({ theme }) {
                                 <Doughnut data={data} options={options} className='z-10' />
                             </div>
 
-                            <div className='w-full pt-4 flex flex-col gap-[16px]'>
+                            <div className='w-full pt-4 flex flex-col gap-[19px]'>
                                 {
                                     doughnutData.map((ele) => {
                                         return (
