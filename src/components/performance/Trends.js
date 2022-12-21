@@ -6,7 +6,7 @@ function Trends({ theme }) {
   return (
     <>
       <div className="flex flex-col">
-        <div className="flex items-center gap-[1px] leading-4 mb-6">
+        <div className="flex items-center gap-[1px] leading-4 sm:mb-5 mb-[1.10rem] h-[32px]">
           <svg
             className="h-[19px]"
             width="24"

@@ -154,7 +154,7 @@ function StackedBar({ theme }) {
                 isLoading ? (
                     <GraphSkeletonLoading theme={theme} />
                 ) : (
-                    <div className={`h-full w-full  rounded-lg shadow-[0_0_3px_rgba(0,0,0,0.2)] ${theme === "dark" ? 'bg-[#242424]' : 'bg-white'}`}>
+                    <div className={`h-full w-full rounded-lg shadow-[0_0_3px_rgba(0,0,0,0.2)] ${theme === "dark" ? 'bg-[#242424]' : 'bg-white'}`}>
                         <div className={`h-full flex md:flex-row flex-col md:items-center justify-between ${theme === "dark" ? 'bg-[#635D5D]' : 'bg-[#F4F4F4]'} px-4 py-3 mb-2 rounded-[0.5rem_0.5rem_0_0]`}>
                             <h1 className={`sm:text-lg text-sm font-bold w-full max-w-max ${theme === "dark" ? 'text-white' : 'text-[#0B0B0C]'}`}>Carbon Emission Trend FY21</h1>
                             <div className='flex items-center gap-3'>

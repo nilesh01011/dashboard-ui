@@ -509,7 +509,7 @@ export const tableData = [
 
     {
         id: 18,
-        title: 'Waste generated, including recycling (metric tons)',
+        title: 'Waste generated, including recycling (metric tons / Percentage recycle)',
         countersData: [
             {
                 id: 18.1,

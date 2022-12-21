@@ -14,10 +14,10 @@ import SelectBox from "../SelectBox";
 function Overview({ theme }) {
 
   return (
-    <div className="mt-4">
+    <div className="sm:mt-[1.1rem] mt-[1.5rem]">
       <div className="flex flex-col">
         {/* title and selectboxs */}
-        <div className="flex xl:items-center items-start xl:gap-0 gap-4 justify-between mb-7 xl:flex-row flex-col">
+        <div className="flex xl:items-center items-start xl:gap-0 gap-4 justify-between mb-5 xl:flex-row flex-col">
           {/* titles */}
           <div className="flex items-start gap-[3px] leading-4">
             <svg className="h-[18px]"

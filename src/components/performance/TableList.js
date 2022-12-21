@@ -52,7 +52,7 @@ function TableList({ theme }) {
                     <div>
                         <div className="w-full lg:overflow-x-hidden overflow-x-scroll no-scrollbar shadow-[0_0_3px_rgba(0,0,0,0.2)] rounded-lg">
                             <div id='overflowScroll' className='w-full h-full'>
-                                <table className={`w-full divide-y-[1px] ${theme === 'dark' ? 'divide-[#635D5D]' : 'divide-gray-200'}`}>
+                                <table className={`w-full divide-y-[1px] ${theme === 'dark' ? 'divide-[#635D5D]' : 'divide-gray-200'} z-index-[1]`}>
                                     <thead className={`w-full ${theme === 'dark' ? 'bg-[#635D5D]' : 'bg-[#F4F4F4]'}`}>
                                         <tr>
                                             {
